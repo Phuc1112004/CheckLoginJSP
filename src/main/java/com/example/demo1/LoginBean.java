@@ -15,7 +15,7 @@ public class LoginBean {
             if (conn == null) {
                 System.out.println("Không thể kết nối đến cơ sở dữ liệu.");
                 return false;
-            }
+            } 
 
             String query = "SELECT * FROM accounts WHERE name = ? AND password = ?";
             stmt = conn.prepareStatement(query);
